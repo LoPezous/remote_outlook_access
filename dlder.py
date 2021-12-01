@@ -2,7 +2,7 @@ import win32com.client as win32
 import os
 import getpass
 username = getpass.getuser()
-adresses = ['martin.pezous-puech@live.fr']
+adresses = ['e-mail adress']
 directory = 'C:/users/' + str(username)
 
 os.system('cd C:/users/' + str(username))
