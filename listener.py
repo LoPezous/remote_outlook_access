@@ -1,15 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 import subprocess
 import win32com.client
 import time
@@ -61,29 +52,4 @@ while True:
         
         
         pass
-    
-
-            
-            
-    
-
- 
-
-
-# In[7]:
-
-
-
-
-
-# In[4]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
+  
