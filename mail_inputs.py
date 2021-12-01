@@ -40,16 +40,6 @@ def email_inputs():
             
                 
             
-        
-
-
-    
-
-       
-  
-    
-        
-
 while True:  
     
     c = email_inputs()
@@ -62,8 +52,14 @@ while True:
         print(c)
         os.system(str(c))
     else:
-        print('scanning...')
-        time.sleep(10)
+        print('scanning.  ', end = '\r')
+        time.sleep(1)
+        print('scanning.. ', end = '\r')
+        time.sleep(1)
+        print('scanning...', end = '\r')
+        time.sleep(1)
+        
+        
         pass
     
 
