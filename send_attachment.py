@@ -7,6 +7,6 @@ for adress in adresses:
         mail.To = adress
         mail.Subject = 'Analysis: Done'
         mail.Body = ''
-        mail.Attachments.Add(r'C:\Users\marti\Desktop\signature.png')
+        mail.Attachments.Add(r'path')
         mail.HTMLBody = ''
         mail.Send()
