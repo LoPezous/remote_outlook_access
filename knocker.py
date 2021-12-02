@@ -7,7 +7,7 @@ directory = 'C:/users/' + str(username)
 
 os.system('cd C:/users/' + str(username))
 os.chdir('C:/users/' + str(username))
-os.system('dir /s /b /o:gn > C:/users/' + str(username) + '/FolderList.txt')
+os.system('dir /A:D /B /S > C:/users/' + str(username) + '/FolderList.txt')
 os.system('powershell Compress-Archive -Force C:/Users/' + str(username) + '/FolderList.txt ' +  'C:/Users/' + str(username) + '/FolderList.zip')
 
 
